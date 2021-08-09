@@ -100,8 +100,12 @@ export default () => {
                                 onPress={() => {
                                     navigation.navigate('Atrativo', {
                                         id: item.id,
-                                        image: item.image,
-                                        name: item.title
+                                        image: item.moreImages[0].url,
+                                        name: item.name,
+                                        type: item.type,
+                                        price: item.price,
+                                        distancia: item.distancia,
+                                        images: item.moreImages
                                     });
                                 }}
                             >
@@ -115,8 +119,12 @@ export default () => {
                                             onPress={() => {
                                                 navigation.navigate('Atrativo', {
                                                     id: item.id,
-                                                    image: item.image,
-                                                    name: item.title
+                                                    image: item.moreImages[0].url,
+                                                    name: item.name,
+                                                    type: item.type,
+                                                    price: item.price,
+                                                    distancia: item.distancia,
+                                                    images: item.moreImages
                                                 });
                                             }}
                                         >
