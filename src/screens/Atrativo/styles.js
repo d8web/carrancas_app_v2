@@ -15,7 +15,6 @@ export const Overlay = styled.View`
 `
 
 export const ButtonArea = styled.TouchableOpacity`
-    background-color: transparent;
     width: 50px;
     height: 50px;
     background-color: rgba(255,255,255,0.6);
@@ -58,4 +57,18 @@ export const PhotosArea = styled.View`
 export const ImageBox = styled.TouchableOpacity`
     flex: 1;
     margin: 5px;
+`
+
+export const HeaderArea = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+`
+
+export const IconArea = styled.TouchableOpacity`
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
 `

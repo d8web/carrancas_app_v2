@@ -1,8 +1,10 @@
 import styled from "styled-components/native";
 
-export const Container = styled.ImageBackground`
+export const Container = styled.SafeAreaView`
     flex: 1;
-    padding: 60px 25px 0px 25px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
     background-color: #fff;
 `
 
@@ -10,7 +12,7 @@ export const InputArea = styled.TouchableOpacity`
     width: 100%;
     height: 60px;
     margin-top: 20px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: #ccc;
     flex-direction: row;
     justify-content: space-between;
     border-radius: 30px;
@@ -44,7 +46,7 @@ export const AreaItemSearch = styled.View`
 
 export const ItemArea = styled.TouchableOpacity`
     margin-bottom: 10px;
-    background-color: rgba(255,255,255,0.7);
+    background-color: #ccc;
     height: 160px;
     flex-direction: row;
     align-items: center;

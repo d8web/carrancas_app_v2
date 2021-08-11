@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
+import * as WebBrowser from 'expo-web-browser';
 import {
     Container,
     Overlay,
@@ -7,32 +8,70 @@ import {
     InfoBottomArea,
     InfoAreaBottomText,
     PhotosArea,
-    ImageBox
+    ImageBox,
+    HeaderArea,
+    IconArea
 } from './styles'
 import { StatusBar } from 'expo-status-bar'
-import { AntDesign } from '@expo/vector-icons'; 
+import { AntDesign, Feather } from '@expo/vector-icons'; 
 import { Text, StyleSheet, Image } from 'react-native'
+import { UserContext } from '../../contexts/UserContext';
 
 export default ({ route, navigation }) => {
 
-    const { id, image, name, type, price, distancia, images } = route.params;
+    const { dispatch:UserDispatch, state:user } = useContext(UserContext);
 
-    const [ imageSelected, setImageSelected ] = useState(0)
+    const { id, image, name, type, price, distancia, images, mapa } = route.params;
+
+    const [ imageSelected, setImageSelected ] = useState(0);
 
     const handleImageClick = (key) => {
-        setImageSelected(key)
+        setImageSelected(key);
     }
+
+    const res = user.favorites.find(item => item.id === id);
+
+    const handleFavorite = () => {
+        let data = {id, name, type, price, image: images[0].url}
+
+        UserDispatch({
+            type: 'setFavorites',
+            payload: {
+                data
+            }
+        });
+    }
+
+    useEffect(()=>{
+        
+    },[])
 
     return (
         <Container source={{ uri: images[imageSelected].url }} >
             <StatusBar style="light" />
             <Overlay>
-                <ButtonArea
-                    title="Voltar"
-                    onPress={() => navigation.goBack()}
-                >
-                    <AntDesign name="arrowleft" size={24} color="white" />
-                </ButtonArea>
+                <HeaderArea>    
+                    <ButtonArea
+                        title="Voltar"
+                        onPress={() => navigation.goBack()}
+                    >
+                        <AntDesign name="arrowleft" size={24} color="#333" />
+                    </ButtonArea>
+                    <ButtonArea
+                        title="Voltar"
+                        onPress={() => WebBrowser.openBrowserAsync(mapa)}
+                    >
+                        <Feather name="map-pin" size={24} color="black" />
+                    </ButtonArea>
+                    <IconArea onPress={handleFavorite}>
+                        {res === undefined &&
+                            <AntDesign name="hearto" size={24} color="#333" />
+                        }
+                        {res &&
+                            <AntDesign name="heart" size={24} color="red" />
+                        }
+                    </IconArea>
+                </HeaderArea>
                 <InfoArea>
                     <Text style={styles.text}>{type}</Text>
                     <Text style={styles.textBig}>{name}</Text>

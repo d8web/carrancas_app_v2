@@ -2,30 +2,42 @@ export const Categorias = [
     {
         id: '1',
         title: 'Atrativos',
+        icon: '',
     },
     {
         id: '2',
         title: 'História',
+        icon: '',
     },
     {
         id: '3',
         title: 'Fauna e Flora',
+        icon: '',
     },
     {
         id: '4',
-        title: 'Guias'
+        title: 'Guias',
+        icon: '',
     },
     {
         id: '5',
-        title: 'Pousadas'
+        title: 'Pousadas',
+        icon: '',
     },
     {
         id: '6',
-        title: 'Alimentação'
+        title: 'Alimentação',
+        icon: '',
     },
     {
         id: '7',
+        title: 'Eventos',
+        icon: '',
+    },
+    {
+        id: '8',
         title: 'Mais Informações',
+        icon: '',
     }
 ];
 
@@ -37,6 +49,7 @@ export const Atrativos = [
         name: 'Véu de Noiva',
         image: 'https://scontent-gru1-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/119950130_321772062248031_3215980876017590751_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=103&_nc_ohc=MBJr1aD1k_cAX96l5YT&edm=AP_V10EBAAAA&ccb=7-4&oh=092ee2d16baeaa8b5564a7dab4aa52b8&oe=6115FC48&_nc_sid=4f375e',
         price: '0',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: 'false',
         description: 'A cachoeira Véu de Noiva é um dos cartões postais de Carrancas, localizada no Parque da Fumaça possui águas claras e um visual deslumbrante!',
         distancia: '6Km',
@@ -66,6 +79,7 @@ export const Atrativos = [
         name: 'do Índio',
         image: 'https://scontent-gru2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/218082941_366178361607621_2266148169332644938_n.jpg?_nc_ht=scontent-gru2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=TVSfKOQeFTsAX83tBre&edm=AP_V10EBAAAA&ccb=7-4&oh=3859773c28770be40bf7dc601f3ff700&oe=61172A78&_nc_sid=4f375e',
         price: '0',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Uma das carrancas naturais que originou o nome da cidade, uma bélissima rocha com o formato esculpido pela própria natureza. A semelhança com um rosto ou uma carranca chama a atenção de quem passa pela área.',
         distancia: '6Km',
@@ -95,6 +109,7 @@ export const Atrativos = [
         name: 'da Zilda',
         image: 'https://scontent-gru2-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/220755266_4497744236912135_2851878830178781508_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_cat=111&_nc_ohc=zJkE--SiYGoAX987Q7_&edm=AP_V10EBAAAA&ccb=7-4&oh=8cb5fce3afe914414125e0b5d8a988eb&oe=6117D0A1&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4882473,-44.6418605/Estr.+Complexo+da+Zilda,+Carrancas+-+MG,+37245-000/@-21.521099,-44.6682543,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f958ed1762ea9:0x6f21fe3c02852382!2m2!1d-44.6516761!2d-21.5540323!3e0',
         polluted: false,
         description: 'Localizado no parque Serra do Moleque, é uma das mais se não a mais procurada pela grande maioria dos turistas, famosa pelas gravações de algumas novelas.',
         distancia: '11Km',
@@ -124,6 +139,7 @@ export const Atrativos = [
         name: 'da Fumaça',
         image: 'https://scontent-gru1-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/118613141_2772962309590040_5483899870699503830_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=108&_nc_ohc=QLxPzFAZuN4AX-pZzFu&tn=S6hVE_gKFJwaA4OA&edm=AP_V10EBAAAA&ccb=7-4&oh=1f1904790b7be6bdb4aa0ab84f48373f&oe=6117A47C&_nc_sid=4f375e',
         price: '0',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: true,
         description: 'Propriedade doada a prefeitura de Carrancas, também é uma das cachoeiras mais procuradas pela grande maioria dos turistas, porém apesar da cachoeira ser muito atrativa existe risco de afogamento devido a forte queda a profundidade e também a um refluxo de água, conhecido também como redemoinho.',
         distancia: '6Km',
@@ -153,6 +169,7 @@ export const Atrativos = [
         name: 'do Turco',
         image: 'https://scontent-gru1-2.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/194715639_540606506934948_6412821546857524807_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=100&_nc_ohc=uEgjQaKquBMAX92urCS&edm=AP_V10EBAAAA&ccb=7-4&oh=bf696b407eb9b716f781d043de73e90c&oe=611772C7&_nc_sid=4f375e',
         price: '0',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Este complexo tem conteúdo para todos, poços rasos e fundos, lugares para saltar, escorregas, pequenas quedas e um pequeno mais belo cânion com um poço bem fundo.',
         distancia: '8Km',
@@ -182,6 +199,7 @@ export const Atrativos = [
         name: 'do Moinho',
         image: 'https://scontent-gru1-2.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/184304496_152137063533783_1414536609418587629_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=103&_nc_ohc=e_PL-62XqgQAX_4egIP&edm=AP_V10EBAAAA&ccb=7-4&oh=3beeddeb4ff136d67c20213f5bac5129&oe=61161F1C&_nc_sid=4f375e',
         price: '10',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Uma bela queda e um poço de aguas claras além de vários poços naturais ao seu redor, assim podemos descrever essa bela cachoeira, uma das poucas em que o sol bate por quase todo o dia.',
         distancia: '2Km',
@@ -211,6 +229,7 @@ export const Atrativos = [
         name: 'do Salomão',
         image: 'https://scontent-gru2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/158914327_276026917306917_6771889358405689792_n.jpg?_nc_ht=scontent-gru2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=8yQ2npjNBBYAX8rXMwL&tn=S6hVE_gKFJwaA4OA&edm=AP_V10EBAAAA&ccb=7-4&oh=e7acf6ff383d51fab9198cda79e04d67&oe=611631B9&_nc_sid=4f375e',
         price: '10',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Fica perto da cachoeira do Moinho.',
         distancia: '2Km',
@@ -240,6 +259,7 @@ export const Atrativos = [
         name: 'do Coração',
         image: 'https://scontent-gru2-1.xx.fbcdn.net/v/t1.6435-9/120777913_3904292116248705_45572926540649316_n.jpg?_nc_cat=109&ccb=1-4&_nc_sid=730e14&_nc_ohc=KKwkZniY-FEAX9wRc3k&_nc_ht=scontent-gru2-1.xx&oh=b8c73e2ad09ee68802ae14f7275aa800&oe=6133F9D6',
         price: '10',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Localizado no completo da Toca.',
         distancia: '2Km',
@@ -269,6 +289,7 @@ export const Atrativos = [
         name: 'da Esmeralda',
         image: 'https://scontent-gru2-2.cdninstagram.com/v/t51.2885-15/e35/212573141_965244154261259_361395212887484167_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_cat=111&_nc_ohc=kxcUJo7BkvIAX8DdAT-&edm=AP_V10EBAAAA&ccb=7-4&oh=1e287531873bfbd963cfdd44576badf4&oe=6117BCEA&_nc_sid=4f375e',
         price: '10',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Localizado na Vargem Grande.',
         distancia: '11Km',
@@ -298,6 +319,7 @@ export const Atrativos = [
         name: 'Racha da Zilda',
         image: 'https://scontent-gru1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/129459873_215066300238421_1328224650470968969_n.jpg?_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=rSfXbW2h7f4AX_3AUi7&edm=AP_V10EBAAAA&ccb=7-4&oh=731b35b16e6bcb1487bb0e870d58304a&oe=6116A7BB&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Cânion lindo.',
         distancia: '12Km',
@@ -327,6 +349,7 @@ export const Atrativos = [
         name: 'Serra de Carrancas',
         image: 'https://scontent-gru2-1.cdninstagram.com/v/t51.2885-15/e35/107373807_730099004491939_499301148707195020_n.jpg?_nc_ht=scontent-gru2-1.cdninstagram.com&_nc_cat=107&_nc_ohc=RU7ojETSEuAAX_RoCRu&edm=AP_V10EBAAAA&ccb=7-4&oh=43ed551bb53414e1077ca5f7aa3f41c4&oe=61170553&_nc_sid=4f375e',
         price: '0',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Serra de Carrancas',
         distancia: '7Km',
@@ -356,6 +379,7 @@ export const Atrativos = [
         name: 'de Carrancas',
         image: 'https://scontent-gru2-2.cdninstagram.com/v/t51.2885-15/e35/156761828_965428954281959_53103712544319322_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_cat=111&_nc_ohc=VaypEGA2tn8AX8OCnW3&edm=AP_V10EBAAAA&ccb=7-4&oh=fa0854b6c72c38fbf7681e08b5d0f6eb&oe=6117EE10&_nc_sid=4f375e',
         price: '0',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Igreja de Carrancas',
         distancia: '',
@@ -385,6 +409,7 @@ export const Atrativos = [
         name: 'Cruz das Almas',
         image: 'https://i.ytimg.com/vi/rPfiMsbYb_k/maxresdefault.jpg',
         price: '0',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '6Km',
@@ -414,6 +439,7 @@ export const Atrativos = [
         name: 'das Onças',
         image: 'https://scontent-gru2-2.cdninstagram.com/v/t51.2885-15/e35/220054713_255352692660026_317245961406255352_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_cat=102&_nc_ohc=K5hLR74a7WYAX8mLW50&edm=AP_V10EBAAAA&ccb=7-4&oh=8eca37a5a10fd47b0b2f8a53c2fe5367&oe=6118E250&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '12Km',
@@ -443,6 +469,7 @@ export const Atrativos = [
         name: 'dos Grampos',
         image: 'https://scontent-gru1-2.cdninstagram.com/v/t51.2885-15/e35/207975110_2882062182035676_4901673838568762329_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=100&_nc_ohc=YwvuzvOUstYAX_v08Du&tn=S6hVE_gKFJwaA4OA&edm=AP_V10EBAAAA&ccb=7-4&oh=26ea005ea0a1e9eded5a2f2b91020c5f&oe=6117B7AE&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '8Km',
@@ -472,6 +499,7 @@ export const Atrativos = [
         name: 'do Grão Mogol',
         image: 'https://scontent-gru2-2.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/189133476_289474642913339_5131040331781765829_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_cat=111&_nc_ohc=Osr4QV5CPN4AX-HCel9&edm=AP_V10EBAAAA&ccb=7-4&oh=614ab640eae7080ec8abc90153e6a9d3&oe=6118D515&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '9Km',
@@ -501,6 +529,7 @@ export const Atrativos = [
         name: 'da Canoa',
         image: 'https://scontent-gru1-2.cdninstagram.com/v/t51.2885-15/e35/162866561_1671866549868096_5854441685362317502_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=100&_nc_ohc=JauVZqKAYvQAX_eNLdw&edm=AP_V10EBAAAA&ccb=7-4&oh=523b2c5b2fcc701fc0237a6538515e51&oe=61186938&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '9Km',
@@ -530,6 +559,7 @@ export const Atrativos = [
         name: 'Tira Prosa',
         image: 'https://scontent-gru1-1.cdninstagram.com/v/t51.2885-15/e35/200827937_1378857559168276_5053109659587517528_n.jpg?_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=Ho0BGjJ_Z7cAX-Uhbn0&edm=AP_V10EBAAAA&ccb=7-4&oh=772a0f638788417f691be7d1a91b17e7&oe=6117E063&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '2Km',
@@ -559,6 +589,7 @@ export const Atrativos = [
         name: 'dos Grilos',
         image: 'https://scontent-gru2-2.cdninstagram.com/v/t51.2885-15/e35/191271689_793900344874370_4632904622810365744_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_cat=102&_nc_ohc=zMDFfp0WUB4AX98p5l-&edm=AP_V10EBAAAA&ccb=7-4&oh=c9a68fdc97df2f1a59c387ed00046de4&oe=61189757&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '2Km',
@@ -588,6 +619,7 @@ export const Atrativos = [
         name: 'da Serrinha',
         image: 'https://scontent-gru2-1.cdninstagram.com/v/t51.2885-15/e35/230797243_207998327942901_5891775749947859002_n.jpg?_nc_ht=scontent-gru2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=0Y7OLysNMDsAX-CH5sb&tn=S6hVE_gKFJwaA4OA&edm=AP_V10EBAAAA&ccb=7-4&oh=21d51d1faa74cc2439daf116239e5d41&oe=6118BE3A&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '2Km',
@@ -617,6 +649,7 @@ export const Atrativos = [
         name: 'do Sossego',
         image: 'https://scontent-gru1-1.cdninstagram.com/v/t51.2885-15/e35/184946319_471496037436973_8077927694442722249_n.jpg?_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=Se2q5RcCaJMAX-06HDx&edm=AP_V10EBAAAA&ccb=7-4&oh=1383dde5ed0cd1dfba829cd40e1b64f6&oe=61179A49&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '2Km',
@@ -646,6 +679,7 @@ export const Atrativos = [
         name: 'do Encontro',
         image: 'https://scontent-gru1-1.cdninstagram.com/v/t51.2885-15/e35/175689451_245664407301448_2301095561835331585_n.jpg?_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=ruivZ5vuBQIAX_2kSRi&edm=AP_V10EBAAAA&ccb=7-4&oh=0620007e73784b0c44a3510fa043e1f5&oe=61185E7C&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '2Km',
@@ -675,6 +709,7 @@ export const Atrativos = [
         name: 'do Escorrega',
         image: 'https://scontent-gru2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/218449924_1183778775431469_6225682601961803245_n.jpg?_nc_ht=scontent-gru2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=CGjPDtw48OoAX-bHNLb&edm=AP_V10EBAAAA&ccb=7-4&oh=499f687bbb6aebdd892eb939fae8c56a&oe=6118E45D&_nc_sid=4f375e',
         price: '20',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '2Km',
@@ -704,6 +739,7 @@ export const Atrativos = [
         name: 'do Guatambu',
         image: 'https://scontent-gru1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/172045638_458029678606276_4588934970749419422_n.jpg?_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=GMJ9YF7jHNcAX_QPMAF&edm=AP_V10EBAAAA&ccb=7-4&oh=fb165e5ed0b5b02b998a8971165a612e&oe=61179666&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '11Km',
@@ -733,6 +769,7 @@ export const Atrativos = [
         name: 'da Proa',
         image: 'https://scontent-gru1-2.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/204876781_229860068741926_8935849805958224431_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=110&_nc_ohc=AjfSTee4VUIAX_KmGI2&edm=AP_V10EBAAAA&ccb=7-4&oh=5cb62c70a21d84c7264507d392aff74c&oe=61190E7E&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '11Km',
@@ -762,6 +799,7 @@ export const Atrativos = [
         name: 'da Fumacinha',
         image: 'https://scontent-gru1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/202773857_1217728008686401_3632384617697917317_n.jpg?_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=AOZaZAWE6qQAX-oUVbc&edm=AP_V10EBAAAA&ccb=7-4&oh=0b2cd957cb8c38d646935080bb65a24a&oe=61181B12&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '11Km',
@@ -791,6 +829,7 @@ export const Atrativos = [
         name: 'das Broas',
         image: 'https://scontent-gru1-2.cdninstagram.com/v/t51.2885-15/e35/170750084_478190469999526_9098067834649084198_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=110&_nc_ohc=cFaGKcSywesAX-bYQFo&edm=AP_V10EBAAAA&ccb=7-4&oh=ea08d79f3f667d64eb467d3c7a422a1b&oe=61177BAD&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '11Km',
@@ -820,6 +859,7 @@ export const Atrativos = [
         name: 'do Índio',
         image: 'https://scontent-gru2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/159495226_265542318527649_2537863925929979392_n.jpg?_nc_ht=scontent-gru2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=MYoxIhuzbOwAX-169SH&tn=S6hVE_gKFJwaA4OA&edm=AP_V10EBAAAA&ccb=7-4&oh=8f937c46dc3e4e11b39f2b786770556c&oe=61178E0A&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '11Km',
@@ -849,6 +889,7 @@ export const Atrativos = [
         name: 'da Compostela',
         image: 'https://scontent-gru2-2.cdninstagram.com/v/t51.2885-15/e35/143385476_156746869409006_9063967916361114243_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_cat=102&_nc_ohc=qvfknZ_8mYQAX-sDD70&edm=AP_V10EBAAAA&ccb=7-4&oh=f9bd7ebdf4d50aadde1c2e4834d27c2b&oe=6118E1B4&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '11Km',
@@ -878,6 +919,7 @@ export const Atrativos = [
         name: 'Monte Teta',
         image: 'https://scontent-gru1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/135795865_441603290345941_2369352615634229757_n.jpg?_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=ISZ2FXVlMdcAX9RiHM2&tn=S6hVE_gKFJwaA4OA&edm=AP_V10EBAAAA&ccb=7-4&oh=a8d0956a7a46f0b4e372cec0b94275d7&oe=611870BD&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '11Km',
@@ -907,6 +949,7 @@ export const Atrativos = [
         name: 'da Zilda',
         image: 'https://scontent-gru2-2.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/134123930_228820368735642_4175068874903060790_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=pELEE52tEHcAX-dQ5j5&edm=AP_V10EBAAAA&ccb=7-4&oh=1fc9ba9e19019911d63612c1442a7f00&oe=6118030D&_nc_sid=4f375e',
         price: '25',
+        mapa: 'https://www.google.com/maps/dir/-21.4884462,-44.6422967/Cachoeira+da+Fuma%C3%A7a,+Carrancas+-+MG,+37245-000/@-21.4803763,-44.6609609,14.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9f94a021ad287d:0xb5527abf11a3db46!2m2!1d-44.6828673!2d-21.4725668!3e0',
         polluted: false,
         description: 'Mirante com estrada de terra ao lado do aeroporto',
         distancia: '11Km',
@@ -935,12 +978,42 @@ export const Guias = [
     {
         id: '1',
         name: 'Daniel',
-        image: 'https://scontent-gru1-1.xx.fbcdn.net/v/t1.6435-9/79156592_522524095001002_8034998776970084352_n.jpg?_nc_cat=101&ccb=1-4&_nc_sid=174925&_nc_ohc=8wH6TbqJAAcAX8y4Oyj&_nc_ht=scontent-gru1-1.xx&oh=3016f1b9af6505615a114bc537f58bf1&oe=61343126'
+        image: 'https://scontent-gru1-1.xx.fbcdn.net/v/t1.6435-9/79156592_522524095001002_8034998776970084352_n.jpg?_nc_cat=101&ccb=1-4&_nc_sid=174925&_nc_ohc=8wH6TbqJAAcAX8y4Oyj&_nc_ht=scontent-gru1-1.xx&oh=3016f1b9af6505615a114bc537f58bf1&oe=61343126',
+        phone: '00 00000-0000',
+        routers: [
+            {
+                id: '1',
+                name: 'Roteiro One',
+                atrativos: [1,2,4],
+                price: 30
+            },
+            {
+                id: '2',
+                name: 'Roteiro Two',
+                atrativos: [6,7,8],
+                price: 30
+            }
+        ]
     },
     {
         id: '2',
         name: 'Fulano',
-        image: 'https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg'
+        image: 'https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg',
+        phone: '99 99999-9999',
+        routers: [
+            {
+                id: '1',
+                name: 'Roteiro One',
+                atrativos: [1,2,4],
+                price: 30
+            },
+            {
+                id: '2',
+                name: 'Roteiro Two',
+                atrativos: [6,7,8],
+                price: 30
+            }
+        ]
     }
 ];
 
@@ -1004,6 +1077,7 @@ export const Pousadas = [
 export const Alimentacao = [
     {
         id: '1',
+        type: 'Comida Mineira',
         name: 'Restaurante Main',
         location: 'Serra',
         image: 'https://servircomrequinte.francobachot.com.br/wp-content/uploads/2018/11/254602-mesas-e-cadeiras-para-restaurante-como-escolher-as-mais-indicadas-e1543433615490.jpg',
@@ -1011,6 +1085,7 @@ export const Alimentacao = [
     },
     {
         id: '2',
+        type: 'Padaria',
         name: 'Padaria Master',
         location: 'Centro',
         image: 'https://vejasp.abril.com.br/wp-content/uploads/2021/03/fabrique-higienopolis.jpg',
@@ -1018,6 +1093,7 @@ export const Alimentacao = [
     },
     {
         id: '3',
+        type: 'Pizzaria',
         name: 'Pizzaria X',
         location: 'Centro',
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQujBWC-afSzCWiK4neWr1uk9E2erlk_SbSvw&usqp=CAU',
@@ -1025,6 +1101,7 @@ export const Alimentacao = [
     },
     {
         id: '4',
+        type: 'Comida Japonesa',
         name: 'Sushi Z',
         location: 'Centro',
         image: 'https://blog.saipos.com/wp-content/uploads/2020/05/10-dicas-de-como-montar-um-restaurante-de-sushi-SAIPOS-sistema-para-restaurante-1.jpg',

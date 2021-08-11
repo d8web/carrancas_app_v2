@@ -18,7 +18,7 @@ export default () => {
     useEffect(() => {
 
         const checkToken = async () => {
-            const token = await AsyncStorage.getItem('token')
+            const token = await AsyncStorage.getItem('token');
 
             if(token) {
 
@@ -56,7 +56,7 @@ export default () => {
             <LoadingIcon size="large" color="#fff" />
             <StatusBar style="light" />
         </Container>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
@@ -65,4 +65,4 @@ const styles = StyleSheet.create({
         fontSize: 30,
         color: '#fff'
     }
-})
+});

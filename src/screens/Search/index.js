@@ -6,8 +6,6 @@ import { Feather } from '@expo/vector-icons';
 // Hooks import
 import { useNavigation } from '@react-navigation/native'
 
-const backgroundImage = 'https://scontent-gru2-1.xx.fbcdn.net/v/t1.6435-9/120777913_3904292116248705_45572926540649316_n.jpg?_nc_cat=109&ccb=1-4&_nc_sid=730e14&_nc_ohc=KKwkZniY-FEAX9wRc3k&_nc_ht=scontent-gru2-1.xx&oh=b8c73e2ad09ee68802ae14f7275aa800&oe=6133F9D6';
-
 import { Atrativos } from '../Home/Data'
 
 export default () => {
@@ -32,7 +30,7 @@ export default () => {
     }, [search])
 
     return (
-        <Container source={{ uri: backgroundImage }} blurRadius={2}>
+        <Container>
                 <InputArea>
                     <InputItem
                         placeholder="Digite um termo"
@@ -41,7 +39,7 @@ export default () => {
                         onChangeText={t=>setSearch(t)}
                     />
                     <InputButton onPress={handleSearch}>
-                        <Feather name="search" size={26} color="white" />
+                        <Feather name="search" size={26} color="#333" />
                     </InputButton>
                 </InputArea>
                 
@@ -63,7 +61,7 @@ export default () => {
                                 }}
                             >
                                 <ImageSearch source={{ uri: item.image }}/>
-                                <Text style={{ marginLeft: 10, color: '#fff', fontFamily: 'Poppins_500Medium' }}>
+                                <Text style={{ marginLeft: 10, color: '#333', fontFamily: 'Poppins_500Medium' }}>
                                     {item.title}
                                 </Text>
                             </ItemArea>

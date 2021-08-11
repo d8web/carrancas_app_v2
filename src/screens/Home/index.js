@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Text, StyleSheet, ScrollView } from 'react-native';
+import { Text, StyleSheet, ScrollView, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import {
     Container,
     Header,
@@ -12,7 +13,6 @@ import {
     BoxInfo,
     AreaBox,
     BoxInfoDescriptionArea,
-    ButtonGo,
     AreaGuia,
     GuiaInfo,
     ImageGuia,
@@ -22,11 +22,11 @@ import {
     AnimalImage,
     PousadaArea,
     PousadaItem,
-    PousadaImage
+    PousadaImage,
 } from './styles';
 
 import { StatusBar } from "expo-status-bar";
-import { AntDesign } from '@expo/vector-icons';
+import { MaterialIcons, Entypo } from '@expo/vector-icons';
 
 import {
     Categorias,
@@ -41,7 +41,8 @@ import {
 import { useNavigation } from '@react-navigation/native'
 
 const CategoryItem = ({ item, onPress, backgroundColor, textColor }) => (
-    <FlatView onPress={onPress} style={[backgroundColor]}>
+    <FlatView onPress={onPress} style={[backgroundColor, {flexDirection: 'row'}]}>
+        <MaterialIcons name="park" size={24} color="#29c2c2" />
         <Text style={[styles.textCategory, textColor]}>{item.title}</Text>
     </FlatView>
 );
@@ -51,6 +52,7 @@ export default () => {
     const navigation = useNavigation()
 
     const [ categorySelected, setcategorySelected ] = useState('1');
+    const [ list, setList ] = useState([])
 
     const renderCategory = ({ item }) => {
         const backgroundColor = item.id === categorySelected ? "#333" : "#fff";
@@ -66,32 +68,36 @@ export default () => {
         );
     };
 
+    useEffect(()=>{
+        setList(Categorias)
+    }, [])
+
     return (
         <Container>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <StatusBar style="auto" />
 
                 <Header>
-                    <AntDesign name="bars" size={38} color="black" style={{ alignItems: 'center' }} />
+                    <Entypo name="water" size={30} color="#29c2c2" />
                     <UserArea>
                         <TextArea>
                             <Text style={styles.boldText}>Bom Dia</Text>
-                            <Text style={styles.text}>Usuário</Text>
+                            <Text style={styles.text}>Daniel</Text>
                         </TextArea>
                         <AvatarImage source={{ uri: 'https://www.kindpng.com/picc/m/22-223941_transparent-avatar-png-male-avatar-icon-transparent-png.png' }} />
                     </UserArea>
                 </Header>
 
                 <FlatItem
-                    data={Categorias}
+                    data={list}
                     renderItem={renderCategory}
                     keyExtractor={item => item.id}
                     horizontal={true}
                     showsHorizontalScrollIndicator={false}
                     height={50}
                     alignItems="center"
-                /> 
-
+                />
+                
                 {categorySelected === '1' &&
                     <AreaInfo>
                         {Atrativos.map((item, key) => (
@@ -105,7 +111,8 @@ export default () => {
                                         type: item.type,
                                         price: item.price,
                                         distancia: item.distancia,
-                                        images: item.moreImages
+                                        images: item.moreImages,
+                                        mapa: item.mapa
                                     });
                                 }}
                             >
@@ -113,23 +120,14 @@ export default () => {
                                     source={{ uri: item.image }}
                                     imageStyle={{ borderRadius: 10 }}
                                 >
+                                    
                                     <BoxInfoDescriptionArea>
-                                        <Text style={styles.textInfo}>{item.title}</Text>
-                                        <ButtonGo
-                                            onPress={() => {
-                                                navigation.navigate('Atrativo', {
-                                                    id: item.id,
-                                                    image: item.moreImages[0].url,
-                                                    name: item.name,
-                                                    type: item.type,
-                                                    price: item.price,
-                                                    distancia: item.distancia,
-                                                    images: item.moreImages
-                                                });
-                                            }}
-                                        >
-                                            <Text style={styles.textButton}>Ver Atrativo</Text>
-                                        </ButtonGo>
+                                        <LinearGradient
+                                            // Button Linear Gradient
+                                            colors={['transparent', '#333']}
+                                            style={styles.button}>
+                                            <Text style={styles.textInfo}>{item.title}</Text>
+                                        </LinearGradient>
                                     </BoxInfoDescriptionArea>
                                 </BoxInfo>
                             </AreaBox>
@@ -163,7 +161,16 @@ export default () => {
                 {categorySelected === '4' &&
                     <AreaGuia>
                         {Guias.map((item, key) => (
-                            <GuiaInfo key={key}>
+                            <GuiaInfo key={key}
+                                onPress={() => {
+                                    navigation.navigate('Guias', {
+                                        id: item.id,
+                                        routers: item.routers,
+                                        name: item.name,
+                                        phone: item.phone
+                                    });
+                                }}
+                            >
                                 <ImageGuia source={{ uri: item.image }} />
                                 <Text style={styles.textButton}>{item.name}</Text>
                                 <ButtonGuia>
@@ -179,9 +186,11 @@ export default () => {
                         {Pousadas.map((item,key)=>(
                             <PousadaItem key={key}>
                                 <PousadaImage source={{ uri: item.image }} />
-                                <Text>{item.name}</Text>
-                                <Text>{item.location}</Text>
-                                <Text>{item.restaurante ? 'Tem Restaurante' : 'Não Tem Restaurante'}</Text>
+                                <View style={{ flex: 1 }}>
+                                    <Text>{item.name}</Text>
+                                    <Text>{item.location}</Text>
+                                    <Text>{item.restaurante ? 'Tem Restaurante' : 'Não Tem Restaurante'}</Text>
+                                </View>
                             </PousadaItem>
                         ))}
                     </PousadaArea>
@@ -190,17 +199,28 @@ export default () => {
                 {categorySelected === '6' &&
                     <PousadaArea>
                         {Alimentacao.map((item,key)=>(
-                            <PousadaItem key={key}>
+                            <PousadaItem
+                                key={key}
+                                onPress={() => {
+                                    navigation.navigate('Alimentacao', {
+                                        id: item.id,
+                                        name: item.name,
+                                        type: item.type
+                                    });
+                                }}
+                            >
                                 <PousadaImage source={{ uri: item.image }} />
-                                <Text>{item.name}</Text>
-                                <Text>{item.location}</Text>
-                                <Text>{item.delivery ? 'Tem Delivery' : 'Não tem Delivery'}</Text>
+                                <View style={{ flex: 1 }}>
+                                    <Text>{item.name}</Text>
+                                    <Text>{item.location}</Text>
+                                    <Text>{item.delivery ? 'Tem Delivery' : 'Não tem Delivery'}</Text>
+                                </View>
                             </PousadaItem>
                         ))}
                     </PousadaArea>
                 }
 
-                {categorySelected === '7' &&
+                {categorySelected === '8' &&
                     <Text>Mais informações</Text>
                 }
                 
@@ -220,9 +240,10 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_500Medium'
     },
     textInfo: {
-        fontSize: 14,
+        fontSize: 16,
         fontFamily: 'Poppins_400Regular',
-        color: '#333'
+        color: '#fff',
+        textAlign: 'center'
     },
     textButton: {
         color: '#333',
@@ -235,5 +256,12 @@ const styles = StyleSheet.create({
         color: '#333',
         marginTop: 30,
         lineHeight: 26
+    },
+    button: {
+        width: '100%',
+        height: 150,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        borderRadius: 10
     }
 });

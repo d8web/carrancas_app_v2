@@ -8,7 +8,7 @@ const TabArea = styled.View`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #333;
+    background-color: #29c2c2;
 `
 
 const TabItem = styled.TouchableOpacity`

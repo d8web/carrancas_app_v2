@@ -26,12 +26,12 @@ export const TextArea = styled.View`
 `
 
 export const AvatarImage = styled.Image`
-    height: 48px;
-    width: 48px;
+    height: 50px;
+    width: 50px;
     border-radius: 24px;
     margin-right: 1px;
     border-width: 2px;
-    border-color: #333;
+    border-color: #29c2c2;
 `
 
 export const FlatItem = styled.FlatList`
@@ -40,11 +40,11 @@ export const FlatItem = styled.FlatList`
 
 export const FlatView = styled.TouchableOpacity`
     padding: 5px 14px;
+    border-radius: 25px;
 `
 
 export const AreaInfo = styled.View`
     width: 100%;
-    padding: 10px 0px;
     margin-top: 26px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -52,8 +52,8 @@ export const AreaInfo = styled.View`
 
 export const AreaBox = styled.TouchableOpacity`
     width: 47%;
-    height: 260px;
-    margin: 1.5%;
+    height: 264px;
+    margin: 16px 1.5%;
     margin-bottom: 6px;
     justify-content: flex-end;
     align-items: center;
@@ -61,17 +61,29 @@ export const AreaBox = styled.TouchableOpacity`
 
 export const BoxInfo = styled.ImageBackground`
     width: 100%;
-    height: 260px;
+    height: 264px;
     justify-content: flex-end;
+    align-items: center;
+    position: relative;
+`
+
+export const PriceArea = styled.View`
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 78px;
+    height: 44px;
+    background-color: rgba(255,255,255,0.6);
+    z-index: 3;
+    border-radius: 40px;
+    justify-content: center;
     align-items: center;
 `
 
 export const BoxInfoDescriptionArea = styled.View`
     width: 100%;
-    height: 34%;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
-    opacity: 0.75;
     justify-content: flex-end;
     align-items: center;
 `
@@ -94,7 +106,7 @@ export const AreaGuia = styled.View`
     margin-top: 26px;
 `
 
-export const GuiaInfo = styled.View`
+export const GuiaInfo = styled.TouchableOpacity`
     width: 100%;
     padding: 20px;
     background-color: #eee;
@@ -156,19 +168,20 @@ export const PousadaArea = styled.View`
     margin-top: 20px;
 `
 
-export const PousadaItem = styled.View`
+export const PousadaItem = styled.TouchableOpacity`
     width: 100%;
-    padding: 20px;
+    padding: 24px;
     margin-bottom: 10px;
     background-color: #eee;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     border-radius: 20px;
 `
 
 export const PousadaImage = styled.Image`
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    margin-bottom: 10px;
+    flex: 1;
+    height: 140px;
+    border-radius: 200px;
+    margin-right: 24px;
 `
